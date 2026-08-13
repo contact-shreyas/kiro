@@ -5,7 +5,6 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage[usenames,dvipsnames]{color}
@@ -18,64 +17,70 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.6in}
-\addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-0.6in}
-\addtolength{\textheight}{1.2in}
+% Margins - generous enough to avoid overlapping
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Section formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom commands
-\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-3pt}}}
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-3pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
+
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
+
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Shreyas Gupta} \\ \vspace{1pt}
-    \small +91 9151606122 $|$ \href{mailto:contactshreyasgupta@gmail.com}{contactshreyasgupta@gmail.com} $|$ 
-    Chennai, India $|$ \href{https://linkedin.com/in/shreyasgupta}{LinkedIn} $|$ \href{https://github.com/shreyasgupta}{GitHub}
+    \textbf{\Huge \scshape Shreyas Gupta} \\ \vspace{4pt}
+    \small +91 9151606122 $|$ \href{mailto:contactshreyasgupta@gmail.com}{contactshreyasgupta@gmail.com} $|$ Chennai, India \\
+    \vspace{2pt}
+    \href{https://linkedin.com/in/shreyasgupta}{LinkedIn} $|$ \href{https://github.com/shreyasgupta}{GitHub}
 \end{center}
 
 %-----------SUMMARY-----------
-\section{Summary}
-\small{AI Researcher and Machine Learning Engineer pursuing Integrated M.Tech in Artificial Intelligence with hands-on expertise in generative AI, agentic AI systems, multi-agent architectures, RAG pipelines, transformer-based models, and graph AI. Proven ability to design novel AI algorithms, build production-grade AI systems, and collaborate across cross-functional teams. Winner of Agentic AI Hackathon 2025 (NielsenIQ \& TCS). Passionate about advancing research in neural architectures, knowledge representation, and autonomous AI systems.}
+\section{Professional Summary}
+\small{AI Researcher and Machine Learning Engineer pursuing Integrated M.Tech in Artificial Intelligence. Expertise in generative AI, agentic AI systems, multi-agent architectures, RAG pipelines, transformer-based models, and graph AI. Proven ability to design novel AI algorithms and build production-grade AI systems. Winner of Agentic AI Hackathon 2025 (NielsenIQ \& TCS). Passionate about neural architectures, knowledge representation, and autonomous AI systems.}
 
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
     \resumeSubheading
       {SRM Institute of Science and Technology}{Chennai, India}
-      {Integrated M.Tech in Artificial Intelligence (CGPA: 8.29/10)}{Aug. 2022 -- May 2027}
+      {Integrated M.Tech in Artificial Intelligence (CGPA: 8.29/10)}{Aug 2022 -- May 2027}
       \resumeItemListStart
-        \resumeItem{Coursework: Machine Learning, Deep Learning, Neural Network Architectures, Statistical Learning Theory, Natural Language Processing, Computer Vision, Graph Neural Networks, Reinforcement Learning, AI Agents \& Multi-Agent Systems}
+        \resumeItem{Relevant Coursework: Machine Learning, Deep Learning, Neural Network Architectures, Statistical Learning Theory, NLP, Computer Vision, Graph Neural Networks, Reinforcement Learning, AI Agents \& Multi-Agent Systems}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -87,35 +92,35 @@
       {AI/ML Engineer -- Research Intern}{May 2026 -- July 2026}
       {Revenuxe}{Bangalore, India}
       \resumeItemListStart
-        \resumeItem{Designed and implemented RAG (Retrieval-Augmented Generation) pipelines and agentic AI architectures with multi-agent orchestration using Python, FastAPI, and LangChain across two enterprise AI products.}
-        \resumeItem{Researched and developed novel prompt engineering strategies and attention-based retrieval mechanisms to improve generative AI model performance by 35\% on domain-specific benchmarks.}
-        \resumeItem{Architected autonomous AI agent systems with tool-use capabilities, chain-of-thought reasoning, and knowledge representation modules for complex enterprise workflows.}
-        \resumeItem{Shipped production-grade full-stack AI applications, migrated inference backends to AWS (EC2, Lambda, S3), and Dockerized ML model deployments for scalable serving.}
+        \resumeItem{Designed and implemented RAG pipelines and agentic AI architectures with multi-agent orchestration using Python, FastAPI, and LangChain across two enterprise AI products.}
+        \resumeItem{Developed novel prompt engineering strategies and attention-based retrieval mechanisms, improving generative AI model performance by 35\% on domain-specific benchmarks.}
+        \resumeItem{Architected autonomous AI agent systems with tool-use capabilities, chain-of-thought reasoning, and knowledge representation modules for enterprise workflows.}
+        \resumeItem{Shipped full-stack AI applications, migrated inference backends to AWS (EC2, Lambda, S3), and Dockerized ML model deployments for scalable serving.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Cybersecurity Research Intern -- AI \& Graph Systems}{Dec 2025 -- March 2026}
       {Indian Institute of Technology, Guwahati}{Guwahati, India}
       \resumeItemListStart
-        \resumeItem{Conducted research on graph-based AI models for cybersecurity vulnerability detection, designing modular architecture with CLI, parser, validator, loader, query engine, and visualization modules.}
-        \resumeItem{Implemented custom LadyBugDB embedded graph database with novel graph traversal algorithms for representing function call graphs and control flow edges -- applicable to Graph AI and knowledge representation.}
-        \resumeItem{Applied causal reasoning techniques to identify vulnerability propagation paths in software dependency graphs, contributing to explainable AI for security analysis.}
+        \resumeItem{Conducted research on graph-based AI models for vulnerability detection, designing modular architecture with CLI, parser, validator, loader, query engine, and UI modules.}
+        \resumeItem{Implemented LadyBugDB -- a custom embedded graph database with novel graph traversal algorithms for function call graphs and control flow edges, applicable to Graph AI and knowledge representation.}
+        \resumeItem{Applied causal reasoning techniques to identify vulnerability propagation paths in dependency graphs, contributing to explainable AI for security analysis.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Open Source Contributor -- AI Engineer}{Dec 2025 -- Present}
       {NgKore Foundation (5G Core)}{Remote}
       \resumeItemListStart
-        \resumeItem{Built autonomous Python AI agents leveraging LLM-based reasoning and multi-agent collaboration to automate monitoring, anomaly detection, and configuration management for 5G core network deployments.}
-        \resumeItem{Designed agent architectures with planning, tool-use, and self-correction capabilities -- demonstrating practical implementation of agentic and multi-agentic systems.}
-        \resumeItem{Contributed features and bug fixes via GitHub PRs, reviewed and merged by senior maintainers in open-source AI community.}
+        \resumeItem{Built autonomous Python AI agents leveraging LLM-based reasoning and multi-agent collaboration for monitoring, anomaly detection, and config management in 5G core deployments.}
+        \resumeItem{Designed agent architectures with planning, tool-use, and self-correction capabilities, demonstrating practical agentic and multi-agentic systems implementation.}
+        \resumeItem{Contributed features and fixes via GitHub PRs, reviewed and merged by senior maintainers.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Business Strategy \& Data Analytics Intern}{May 2024 -- July 2024}
       {To-Let Globe}{Lucknow, India}
       \resumeItemListStart
-        \resumeItem{Applied statistical analysis and data-driven inference on 10,000+ rental listings using SQL and Python; built Power BI dashboards to visualize patterns and support data-driven decision-making.}
+        \resumeItem{Applied statistical analysis on 10,000+ rental listings using SQL and Python to identify pricing and demand trends; built Power BI dashboards for leadership decision-making.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -125,19 +130,19 @@
 \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{BharatGreen AI} $|$ \emph{Python, FastAPI, Next.js, TypeScript, NVIDIA NIM, Generative AI}}{Jan 2026 -- March 2026}
+      {\textbf{BharatGreen AI} $|$ \emph{Python, FastAPI, Next.js, TypeScript, NVIDIA NIM}}{Jan 2026 -- March 2026}
       \resumeItemListStart
-        \resumeItem{Designed and developed AI sustainability research platform integrating generative AI models (NVIDIA NIM) for energy forecasting, carbon footprint analysis, and water usage optimization across Indian regions.}
-        \resumeItem{Implemented what-if analysis engine using causal inference and temporal modeling to simulate carbon-aware scheduling scenarios -- advancing research in AI for social good and UN SDGs.}
-        \resumeItem{Developed real-time multimodal data processing pipeline handling temporal sensor data, geospatial inputs, and text-based policy documents using transformer-based architectures.}
+        \resumeItem{Built AI sustainability platform integrating generative AI models (NVIDIA NIM) for energy forecasting, carbon analysis, and water optimization across Indian regions.}
+        \resumeItem{Implemented what-if analysis engine using causal inference and temporal modeling for carbon-aware scheduling, advancing AI for UN SDGs.}
+        \resumeItem{Developed multimodal data pipeline handling temporal, geospatial, and text data using transformer-based architectures.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Light Pollution Sentinel} $|$ \emph{Python, Next.js, PostgreSQL, OpenAI, Docker, AI Agents}}{July 2025 -- Sept 2025}
+      {\textbf{Light Pollution Sentinel} $|$ \emph{Python, Next.js, PostgreSQL, OpenAI, Docker}}{July 2025 -- Sept 2025}
       \resumeItemListStart
-        \resumeItem{Built autonomous AI agent pipeline for detecting light-pollution hotspots from NASA satellite data across 742 Indian districts using concept discovery and extraction techniques.}
-        \resumeItem{Developed explainable AI insights module generating severity-based alerts with natural language explanations, demonstrating research in explainable AI and knowledge extraction.}
-        \resumeItem{Shipped production system with real-time dashboard featuring heatmaps, AI-generated analysis, and automated email alerting -- end-to-end AI research to deployment pipeline.}
+        \resumeItem{Built autonomous AI agent pipeline detecting light-pollution hotspots from NASA satellite data across 742 districts using concept discovery and extraction.}
+        \resumeItem{Developed explainable AI module generating severity-based alerts with natural language explanations.}
+        \resumeItem{Shipped production system with real-time heatmaps, AI-generated insights, and automated alerting.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -146,7 +151,10 @@
 \section{Awards \& Achievements}
 \resumeSubHeadingListStart
     \resumeProjectHeading
-      {\textbf{Winner -- Agentic AI Hackathon 2025} $|$ NielsenIQ \& TCS -- Built ALPS (autonomous multi-agent system)}{Sep 2025}
+      {\textbf{Winner -- Agentic AI Hackathon 2025} $|$ NielsenIQ \& TCS}{Sep 2025}
+      \resumeItemListStart
+        \resumeItem{Built ALPS -- an autonomous multi-agent system with LLM-based reasoning and orchestration for enterprise AI applications.}
+      \resumeItemListEnd
     \resumeProjectHeading
       {\textbf{Member -- Indian Society for Technical Education (ISTE)} $|$ SRM Institute}{Mar 2025 -- Present}
 \resumeSubHeadingListEnd
@@ -155,12 +163,12 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{AI/ML Frameworks}{: TensorFlow, PyTorch, LangChain, OpenAI API, Google Gemini API, NVIDIA NIM, Hugging Face Transformers, scikit-learn, NLTK, Seaborn, Streamlit} \\
-     \textbf{AI Research Areas}{: Generative AI (LLMs), Agentic AI, Multi-Agent Systems, RAG, Transformer Architectures, Attention Mechanisms, Graph AI, Explainable AI, Causal Reasoning, Knowledge Representation, Concept Discovery} \\
-     \textbf{Programming Languages}{: Python, Java, C/C++, SQL (PostgreSQL), JavaScript, TypeScript} \\
-     \textbf{Frameworks \& Tools}{: FastAPI, React, Next.js, Node.js, Flask} \\
-     \textbf{Infrastructure \& DevOps}{: AWS (EC2, Lambda, S3), Azure, Docker, Linux, Git, GitHub, CI/CD} \\
-     \textbf{Research Tools}{: Jupyter Notebook, Anaconda, VS Code, LaTeX, Weights \& Biases}
+     \textbf{AI/ML Frameworks:} TensorFlow, PyTorch, LangChain, OpenAI API, Google Gemini API, NVIDIA NIM, Hugging Face Transformers, scikit-learn, NLTK, Streamlit \\[3pt]
+     \textbf{AI Research Areas:} Generative AI (LLMs), Agentic AI, Multi-Agent Systems, RAG, Transformer Architectures, Attention Mechanisms, Graph AI, Explainable AI, Causal Reasoning, Knowledge Representation \\[3pt]
+     \textbf{Languages:} Python, Java, C/C++, SQL (PostgreSQL), JavaScript, TypeScript \\[3pt]
+     \textbf{Frameworks \& Tools:} FastAPI, React, Next.js, Node.js, Flask \\[3pt]
+     \textbf{Infrastructure:} AWS (EC2, Lambda, S3), Azure, Docker, Linux, Git, GitHub, CI/CD \\[3pt]
+     \textbf{Research Tools:} Jupyter Notebook, LaTeX, Weights \& Biases, VS Code, Anaconda
     }}
 \end{itemize}
 
@@ -168,10 +176,10 @@
 \section{Certifications}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     TATA GenAI Powered Data Analytics, Forage (Oct '25) $|$
-     Deloitte Technology Job Simulation, Forage (Jun '25) $|$
-     Competitive Programming (Excellence), Coding Ninjas (Jun '24) $|$
-     Programming in Java, NPTEL (Oct '23)
+     TATA GenAI Powered Data Analytics, Forage (Oct 2025) \\
+     Deloitte Technology Job Simulation, Forage (Jun 2025) \\
+     Competitive Programming -- Certificate of Excellence, Coding Ninjas (Jun 2024) \\
+     Programming in Java, NPTEL (Oct 2023)
     }}
 \end{itemize}
 
